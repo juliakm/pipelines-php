@@ -22,6 +22,7 @@ steps:
     php -version
   displayName: 'Use PHP version $(phpVersion)'
 
+- script: echo $(test)
 - script: |
    composer init
    composer install --no-interaction --prefer-dist
